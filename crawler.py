@@ -2,6 +2,7 @@ import asyncio
 import time
 import subprocess
 import os
+import sys
 import pyautogui
 import pandas as pd
 
@@ -91,28 +92,29 @@ def run_pyautogui_automation():
 
     time.sleep(0.2)
     
+    # The following steps are commented out but kept for reference.
     # # --- Step 2: Deselect the Pump filter ---
     # if not wait_and_click(IMAGES["pump"], "Pump filter (to deselect)"):
     #     print("Warning: Could not find Pump filter. It might already be deselected.")
     # time.sleep(0.2)
-    
+    # 
     # # --- Step 3: Deselect the Moonshot filter ---
     # if not wait_and_click(IMAGES["moonshot"], "Moonshot filter (to deselect)"):
     #     print("Warning: Could not find Moonshot filter. It might already be deselected.")
     # time.sleep(0.2)
-    
+    # 
     # # --- Step 4: Click the filter button on the left beside the New Pool ---
     # if not wait_and_click(IMAGES["filter"], "Filter button on the left"):
     #     print("Error: Unable to click the filter button.")
     #     return False
     # time.sleep(0.5)
-    
+    # 
     # # --- Step 5: Select the 'with only 1 socials' filter option ---
     # if not wait_and_click(IMAGES["socials"], "'with only 1 socials' filter option"):
     #     print("Error: Unable to select the 'with only 1 socials' filter option.")
     #     return False
     # time.sleep(0.2)
-    
+    # 
     # # --- Step 6: Click the Apply button ---
     # if not wait_and_click(IMAGES["apply"], "Apply button"):
     #     print("Error: Unable to click the Apply button.")
@@ -206,22 +208,54 @@ async def fetch_scrape_data():
         print("Navigation complete.")
 
     print("Starting to scrape from the target page...")
-    # Repeatedly scrape the content from the page.
+    # Repeatedly scrape the content from the page every 5 seconds.
     while True:
         try:
             text = await page.inner_text("body")
             display_box({"Page Content": text})
         except Exception as scrape_err:
             print(f"Scraping error: {scrape_err}")
-        await asyncio.sleep(0.25)
+        await asyncio.sleep(5)
 
     await p.stop()
+
+# =============================================================================
+# Stdout Tee Setup: Redirect prints to both terminal and file
+# =============================================================================
+
+class Tee:
+    """
+    A simple class to redirect stdout to multiple file-like objects.
+    """
+    def __init__(self, *files):
+        self.files = files
+
+    def write(self, obj):
+        for f in self.files:
+            f.write(obj)
+            f.flush()
+
+    def flush(self):
+        for f in self.files:
+            f.flush()
+
+def setup_stdout_tee(log_file_path):
+    # Ensure the directory for the log file exists.
+    log_dir = os.path.dirname(log_file_path)
+    os.makedirs(log_dir, exist_ok=True)
+    # Open the log file in append mode.
+    log_file = open(log_file_path, "a", encoding="utf-8")
+    # Create a tee for stdout.
+    sys.stdout = Tee(sys.stdout, log_file)
 
 # =============================================================================
 # Main Integration
 # =============================================================================
 
 def main():
+    # Setup stdout tee to print to terminal and continuously update the file.
+    setup_stdout_tee("./data/data.txt")
+    
     # Step 1: Launch a separate Chrome instance.
     launch_separate_browser()
     
