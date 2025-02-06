@@ -4,13 +4,14 @@ import webbrowser
 
 # --- Configuration ---
 URL = "https://gmgn.ai/new-pair?chain=sol"
-# File names for the reference images (make sure these files exist)
+# File names for the reference images (ensure these files exist in the proper folder)
 IMAGES = {
     "close": "./images/close_button.png",
-    "raydium": "./images/raydium.png",
     "pump": "./images/pump.png",
     "moonshot": "./images/moonshot.png",
-    "socials": "./images/socials.png"
+    "filter": "./images/filter_button.png",
+    "socials": "./images/socials.png",  # represents "with only 1 socials" option
+    "apply": "./images/apply.png"
 }
 # Confidence level for image matching (requires OpenCV)
 CONFIDENCE = 0.8
@@ -34,7 +35,7 @@ def wait_and_click(image_file, description, timeout=30):
             pyautogui.click()
             print(f"Clicked on {description}.")
             return True
-        time.sleep(5)
+        time.sleep(1)
     print(f"Timeout: Could not find {description}.")
     return False
 
@@ -51,29 +52,37 @@ def main():
         print("Error: Unable to close the pop-up. Exiting script.")
         return
     
-    time.sleep(5)  # Wait briefly after closing the pop-up
-    
-    # --- Step 2: Click on the Raydium filter ---
-    if not wait_and_click(IMAGES["raydium"], "Raydium filter"):
-        print("Error: Unable to click the Raydium filter.")
-    
-    time.sleep(5)
-    
-    # --- Step 3: Deselect the Pump filter ---
+    time.sleep(0.1)  # Wait briefly after closing the pop-up
+
+    # --- Step 2: Deselect the Pump filter ---
     if not wait_and_click(IMAGES["pump"], "Pump filter (to deselect)"):
         print("Warning: Could not find Pump filter. It might already be deselected.")
     
-    time.sleep(5)
+    time.sleep(0.1)
     
-    # --- Step 4: Deselect the Moonshot filter ---
+    # --- Step 3: Deselect the Moonshot filter ---
     if not wait_and_click(IMAGES["moonshot"], "Moonshot filter (to deselect)"):
         print("Warning: Could not find Moonshot filter. It might already be deselected.")
     
-    time.sleep(5)
+    time.sleep(0.1)
     
-    # --- Step 5: Click on the 'with at least 1 socials' filter under New Pool ---
-    if not wait_and_click(IMAGES["socials"], "'with at least 1 socials' filter"):
-        print("Error: Unable to click the 'with at least 1 socials' filter.")
+    # --- Step 4: Click the filter button on the left beside the New Pool ---
+    if not wait_and_click(IMAGES["filter"], "Filter button on the left"):
+        print("Error: Unable to click the filter button.")
+        return
+    
+    time.sleep(0.1)
+    
+    # --- Step 5: Select the 'with only 1 socials' filter option ---
+    if not wait_and_click(IMAGES["socials"], "'with only 1 socials' filter option"):
+        print("Error: Unable to select the 'with only 1 socials' filter option.")
+        return
+    
+    time.sleep(0.1)
+    
+    # --- Step 6: Click the Apply button ---
+    if not wait_and_click(IMAGES["apply"], "Apply button"):
+        print("Error: Unable to click the Apply button.")
     
     # Optionally, keep the browser open for observation.
     print("Automation steps completed.")
