@@ -1,15 +1,29 @@
 import asyncio
 import time
-import webbrowser
+import subprocess
+import os
 import pyautogui
 import pandas as pd
 
 # =============================================================================
-# Part 1: PyAutoGUI Automation to Open and Manipulate the Page
+# Configuration for the separate Chrome instance
 # =============================================================================
+# Path to your Chrome executable (adjust as needed).
+chrome_path = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
 
-# --- Configuration for PyAutoGUI ---
-URL = "https://gmgn.ai/new-pair?chain=sol"  # Target URL to open in your browser
+# Use a temporary folder for this browser instance's user data.
+temp_user_data_dir = r"C:\temp\my_temp_chrome_profile"
+os.makedirs(temp_user_data_dir, exist_ok=True)
+
+# Use a dedicated remote debugging port (different from your default, if any).
+remote_debugging_port = 9223
+
+# The target URL to open.
+URL = "https://gmgn.ai/new-pair?chain=sol"
+
+# =============================================================================
+# Part 1: Launch a separate Chrome instance and perform PyAutoGUI automation
+# =============================================================================
 
 # File names for the reference images (ensure these files exist at the given path)
 IMAGES = {
@@ -23,6 +37,21 @@ IMAGES = {
 
 # Confidence level for image matching (requires OpenCV installed)
 CONFIDENCE = 0.8
+
+def launch_separate_browser():
+    """
+    Launches an entirely separate Chrome instance using the specified
+    executable, temporary user data directory, remote debugging port, and target URL.
+    """
+    args = [
+        chrome_path,
+        f"--remote-debugging-port={remote_debugging_port}",
+        f"--user-data-dir={temp_user_data_dir}",
+        URL  # Open the target URL immediately.
+    ]
+    # Launch Chrome without waiting for it to exit.
+    subprocess.Popen(args)
+    print(f"Launched separate Chrome instance with remote debugging on port {remote_debugging_port}.")
 
 def wait_and_click(image_file, description, timeout=30):
     """
@@ -48,35 +77,43 @@ def wait_and_click(image_file, description, timeout=30):
 
 def run_pyautogui_automation():
     """
-    Open the target URL in the default web browser and run a series of clicks
-    to adjust the filters as needed.
+    Perform a series of PyAutoGUI actions on the opened browser window.
+    The original commented-out steps are retained.
     """
-    # Open the URL in your default web browser.
-    webbrowser.open(URL)
     print("Opening the website. Please do not use the mouse during automation.")
-    time.sleep(3)  # Allow time for the browser and page to load
+    # Allow time for the browser and page to load.
+    time.sleep(5)
 
     # --- Step 1: Close the pop-up ---
     if not wait_and_click(IMAGES["close"], "pop-up close button"):
         print("Error: Unable to close the pop-up. Exiting automation.")
         return False
 
-    # (Optional additional steps are commented out.)
-    # time.sleep(0.1)
+    time.sleep(0.2)
+    
+    # # --- Step 2: Deselect the Pump filter ---
     # if not wait_and_click(IMAGES["pump"], "Pump filter (to deselect)"):
     #     print("Warning: Could not find Pump filter. It might already be deselected.")
-    # time.sleep(0.1)
+    # time.sleep(0.2)
+    
+    # # --- Step 3: Deselect the Moonshot filter ---
     # if not wait_and_click(IMAGES["moonshot"], "Moonshot filter (to deselect)"):
     #     print("Warning: Could not find Moonshot filter. It might already be deselected.")
-    # time.sleep(0.1)
+    # time.sleep(0.2)
+    
+    # # --- Step 4: Click the filter button on the left beside the New Pool ---
     # if not wait_and_click(IMAGES["filter"], "Filter button on the left"):
     #     print("Error: Unable to click the filter button.")
     #     return False
-    # time.sleep(0.1)
+    # time.sleep(0.5)
+    
+    # # --- Step 5: Select the 'with only 1 socials' filter option ---
     # if not wait_and_click(IMAGES["socials"], "'with only 1 socials' filter option"):
     #     print("Error: Unable to select the 'with only 1 socials' filter option.")
     #     return False
-    # time.sleep(0.1)
+    # time.sleep(0.2)
+    
+    # # --- Step 6: Click the Apply button ---
     # if not wait_and_click(IMAGES["apply"], "Apply button"):
     #     print("Error: Unable to click the Apply button.")
     #     return False
@@ -86,11 +123,11 @@ def run_pyautogui_automation():
     return True
 
 # =============================================================================
-# Part 2: Asynchronous Scraping Using Playwright via CDP (Reusing the Opened Page)
+# Part 2: Asynchronous Web Crawler Using Playwright (After PyAutoGUI actions)
 # =============================================================================
 
-# The target URL we expect to scrape.
-SCRAPE_URL = "https://gmgn.ai/new-pair?chain=sol"
+# In this part, we connect to the separate Chrome instance using the specified remote debugging port.
+SCRAPE_URL = URL  # Use the same target URL.
 
 def display_box(data):
     """Display the provided data inside a decorative box."""
@@ -105,18 +142,17 @@ def display_box(data):
 
 async def fetch_scrape_data():
     """
-    Connect to the already running Chrome instance (with remote debugging enabled)
-    and reuse the page that was opened by PyAutoGUI. If the page's URL is not our target,
-    force it to navigate to the target URL.
+    Connect to the separate Chrome instance (with remote debugging enabled)
+    and reuse the already open page.
     """
     from playwright.async_api import async_playwright
 
     p = await async_playwright().start()
     try:
-        # Connect to Chrome running with remote debugging on port 9222.
-        browser = await p.chromium.connect_over_cdp("http://localhost:9222")
+        # Connect to Chrome running with remote debugging on our dedicated port.
+        browser = await p.chromium.connect_over_cdp(f"http://localhost:{remote_debugging_port}")
     except Exception as e:
-        print("Error connecting via CDP. Make sure Chrome is running with remote debugging enabled on port 9222.")
+        print("Error connecting via CDP. Make sure Chrome is running with remote debugging enabled on the specified port.")
         await p.stop()
         return
 
@@ -127,14 +163,13 @@ async def fetch_scrape_data():
         await p.stop()
         return
 
-    # Poll for up to 30 seconds to find any open page.
+    # Poll for up to 30 seconds to find an open page.
     page = None
     timeout = 30  # seconds
     start = time.time()
     while time.time() - start < timeout:
         pages = context.pages
         if pages:
-            # Debug: print the URLs of all pages.
             for pg in pages:
                 print("Found page URL:", pg.url)
             # Try to find a page with the target URL.
@@ -158,20 +193,28 @@ async def fetch_scrape_data():
     # If the found page does not have the target URL, force navigation.
     if SCRAPE_URL not in page.url:
         print(f"Current page URL is '{page.url}'. Navigating to the target URL...")
-        await page.goto(SCRAPE_URL)
-        await page.wait_for_load_state("networkidle")
+        try:
+            await page.goto(SCRAPE_URL, wait_until="networkidle")
+        except Exception as nav_err:
+            print(f"Navigation error: {nav_err}")
+            try:
+                await page.reload(wait_until="networkidle")
+            except Exception as reload_err:
+                print(f"Reload error: {reload_err}")
+                await p.stop()
+                return
         print("Navigation complete.")
 
     print("Starting to scrape from the target page...")
-    # Repeatedly scrape the content from the (now correct) page.
+    # Repeatedly scrape the content from the page.
     while True:
-        # Get the inner text of the page body.
-        text = await page.inner_text("body")
-        # Display the scraped content in a decorative box.
-        display_box({"Page Content": text})
-        await asyncio.sleep(0.25)  # Adjust the interval as desired
+        try:
+            text = await page.inner_text("body")
+            display_box({"Page Content": text})
+        except Exception as scrape_err:
+            print(f"Scraping error: {scrape_err}")
+        await asyncio.sleep(0.25)
 
-    # Cleanup (unreachable because of the infinite loop)
     await p.stop()
 
 # =============================================================================
@@ -179,14 +222,15 @@ async def fetch_scrape_data():
 # =============================================================================
 
 def main():
-    # Step 1: Run the PyAutoGUI automation to open the page.
-    # Make sure that Chrome is launched with remote debugging enabled.
-    automation_success = run_pyautogui_automation()
-    if not automation_success:
+    # Step 1: Launch a separate Chrome instance.
+    launch_separate_browser()
+    
+    # Step 2: Run the PyAutoGUI automation to interact with the browser.
+    if not run_pyautogui_automation():
         print("Automation did not complete successfully. Exiting.")
         return
 
-    # Step 2: Start the asynchronous scraping process, reusing the open Chrome tab.
+    # Step 3: Start the asynchronous web crawler.
     print("Starting asynchronous scraping...")
     try:
         asyncio.run(fetch_scrape_data())
