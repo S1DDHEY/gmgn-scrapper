@@ -3,1174 +3,155 @@ Opening the website. Please do not use the mouse during automation.
 Waiting for pop-up close button...
 Clicked on pop-up close button.
 PyAutoGUI automation steps completed.
-Starting asynchronous scraping...
+Starting asynchronous coin monitoring...
 Found page URL: https://gmgn.ai/new-pair?chain=sol
-Starting to scrape from the target page...
-
-═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
-║ 📊 Scraped Data ║
-═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
-║ Page Content: Meme
-New pair
-Trending
-CopyTrade
-Holding
-Follow
-Ctrl alt K
-SOL
-Connect
-Dashboard
-New pair
-1m
-5m
-1h
-6h
-24h
-Raydium
-Pump
-Moonshot
-
-Filter Token
-
-Filter Risks
-
-Filter Wash Traded
-
-Quick Buy
-🌱 New Pool
-Filter
-1
-MTV
-Montrev
-Buy 
-
-0s
-
-6Cn3J...SML
-
-99%
-99%
-
-Liq
-
-$81.28
-
-2
-
-V
-
-$0
-
-MC
-
---
-
-BARRON
-OFFICIAL BARRON
-Buy 
-
-37s
-
-34n41...Ppe
-
-0%
-
-Liq
-
-$798.4K
-
-27
-
-2
-
-V
-
-$93.83
-
-MC
-
-$400.3K
-
-D.O.G.E
-D.O.G.E.
-Buy 
-
-51s
-
-AfsQX...Nr6
-
-74%
-
-Liq
-
-$459.2K
-
-259
-
-9
-
-V
-
-$229.4K
-
-MC
-
-$1.8B
-
-APE
-Monkey Business
-Buy 
-
-2m
-
-5HMVB...AkW
-
-13%
-
-Liq
-
-$39.3K
-
-1
-
-V
-
-$166.4K
-
-MC
-
-$40.3M
-
-BABYSOL
-Baby Solana
-Buy 
-
-2m
-
-9fAvA...sBB
-
-10%
-Run
-
-Liq
-
-$193.8
-
-237
-
-V
-
-$167.9K
-
-MC
-
-$369.4
-
-LI
-LITT
-Lost In The Trenches
-Buy 
-
-3m
-
-BeSZz...ump
-
-27%
-28%
-
-Liq
-
-$59.9K
-
-1
-
-V
-
-$124.3K
-
-MC
-
-$59.4K
-
-THOG
-Theory Of Gravity
-Buy 
-
-3m
-
-GDF3A...oon
-
-14%
-Run
-
-Liq
-
-$52.6K
-
-278
-
-V
-
-$151.7K
-
-MC
-
-$39.4M
-
-🔥 Burnt
-Filter
-APE
-Monkey Business
-Buy 
-
-2m
-
-5HMVB...AkW
-
-13%
-
-Liq
-
-$39.3K
-
-1
-
-V
-
-$166.4K
-
-MC
-
-$40.3M
-
-BABYSOL
-Baby Solana
-Buy 
-
-2m
-
-9fAvA...sBB
-
-10%
-Run
-
-Liq
-
-$193.8
-
-237
-
-V
-
-$167.9K
-
-MC
-
-$369.4
-
-THOG
-Theory Of Gravity
-Buy 
-
-3m
-
-GDF3A...oon
-
-14%
-Run
-
-Liq
-
-$52.6K
-
-278
-
-V
-
-$151.7K
-
-MC
-
-$39.4M
-
-BLESS
-Blessed
-Buy 
-
-4m
-
-BVbuM...Snj
-
-14%
-
-Liq
-
-$35.5K
-
-235
-
-V
-
-$370.8K
-
-MC
-
-$33.6M
-
-GUCCI
-Official Big Gucci Berry
-Buy 
-
-5m
-
-8a4xM...ump
-
-15%
-4%
-
-Liq
-
-$42.1K
-
-383
-
-7
-
-V
-
-$256.4K
-
-MC
-
-$135.7K
-
-xing
-xing xing
-Buy 
-
-5m
-
-5DzJA...ftj
-
-12%
-
-Liq
-
-$99.7K
-
-201
-
-V
-
-$107K
-
-MC
-
-$105.5K
-
-SWAP
-Swapay
-Buy 
-
-7m
-
-9evjq...wap
-
-11%
-Run
-
-Liq
-
-$7.4K
-
-251
-
-6
-
-V
-
-$15.8K
-
-MC
-
-$30.2K
-
-🦅 DEXScreener Spent
-Filter
-LI
-LITT
-Lost In The Trenches
-Buy 
-
-3m
-
-BeSZz...ump
-
-27%
-28%
-
-Liq
-
-$59.9K
-
-1
-
-V
-
-$124.3K
-
-MC
-
-$59.4K
-
-GUCCI
-Official Big Gucci Berry
-Buy 
-
-5m
-
-8a4xM...ump
-
-15%
-4%
-
-Liq
-
-$42.1K
-
-383
-
-7
-
-V
-
-$256.4K
-
-MC
-
-$135.7K
-
-xing
-xing xing
-Buy 
-
-5m
-
-5DzJA...ftj
-
-12%
-
-Liq
-
-$99.7K
-
-201
-
-V
-
-$107K
-
-MC
-
-$105.5K
-
-SEALP
-Seal Pnut Sol
-Buy 
-
-8m
-
-Bypzo...ump
-
-8%
-
-Liq
-
-$78.6K
-
-242
-
-V
-
-$454.1K
-
-MC
-
-$100.2K
-
-MAVS
-MAVS CASH
-Buy 
-
-12m
-
-A5pC5...ump
-
-61%
-36%
-
-Liq
-
-$55K
-
-900
-
-42
-
-V
-
-$104.8K
-
-MC
-
-$239.3K
-
-bred
-bred
-Buy 
-
-13m
-
-GYZqq...Ud4
-
-58%
-47%
-
-Liq
-
-$82.08
-
-467
-
-V
-
-$267.6K
-
-MC
-
-$1.3K
-
-PUMPIT
-BOGDANOFF
-Buy 
-
-14m
-
-BAvdL...Ts7
-
-57%
-46%
-
-Liq
-
-$29.83
-
-379
-
-1
-
-V
-
-$384K
-
-MC
-
-$81.7K
-
-Sniper New
-Following
-Refer
-0
-Contest
-Mobile APP
-Tutorial
-About
-Bot
-API
-SOL: $190.53 ║
-═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
-
-
-═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
-║ 📊 Scraped Data ║
-═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
-║ Page Content: Meme
-New pair
-Trending
-CopyTrade
-Holding
-Follow
-Ctrl alt K
-SOL
-Connect
-Dashboard
-New pair
-1m
-5m
-1h
-6h
-24h
-Raydium
-Pump
-Moonshot
-
-Filter Token
-
-Filter Risks
-
-Filter Wash Traded
-
-Quick Buy
-🌱 New Pool
-Filter
-1
-MTV
-Montrev
-Buy 
-
-0s
-
-6Cn3J...SML
-
-99%
-99%
-
-Liq
-
-$81.28
-
-2
-
-V
-
-$0
-
-MC
-
---
-
-BARRON
-OFFICIAL BARRON
-Buy 
-
-42s
-
-34n41...Ppe
-
-0%
-
-Liq
-
-$798.4K
-
-27
-
-2
-
-V
-
-$93.83
-
-MC
-
-$400.3K
-
-D.O.G.E
-D.O.G.E.
-Buy 
-
-56s
-
-AfsQX...Nr6
-
-74%
-
-Liq
-
-$459.2K
-
-259
-
-9
-
-V
-
-$229.4K
-
-MC
-
-$1.8B
-
-APE
-Monkey Business
-Buy 
-
-2m
-
-5HMVB...AkW
-
-13%
-
-Liq
-
-$39.3K
-
-1
-
-V
-
-$166.4K
-
-MC
-
-$40.3M
-
-BABYSOL
-Baby Solana
-Buy 
-
-2m
-
-9fAvA...sBB
-
-10%
-Run
-
-Liq
-
-$193.8
-
-237
-
-V
-
-$167.9K
-
-MC
-
-$369.4
-
-LI
-LITT
-Lost In The Trenches
-Buy 
-
-3m
-
-BeSZz...ump
-
-27%
-28%
-
-Liq
-
-$59.9K
-
-1
-
-V
-
-$124.3K
-
-MC
-
-$59.4K
-
-THOG
-Theory Of Gravity
-Buy 
-
-3m
-
-GDF3A...oon
-
-14%
-Run
-
-Liq
-
-$52.6K
-
-278
-
-V
-
-$151.7K
-
-MC
-
-$39.4M
-
-🔥 Burnt
-Filter
-APE
-Monkey Business
-Buy 
-
-2m
-
-5HMVB...AkW
-
-13%
-
-Liq
-
-$39.3K
-
-1
-
-V
-
-$166.4K
-
-MC
-
-$40.3M
-
-BABYSOL
-Baby Solana
-Buy 
-
-2m
-
-9fAvA...sBB
-
-10%
-Run
-
-Liq
-
-$193.8
-
-237
-
-V
-
-$167.9K
-
-MC
-
-$369.4
-
-THOG
-Theory Of Gravity
-Buy 
-
-3m
-
-GDF3A...oon
-
-14%
-Run
-
-Liq
-
-$52.6K
-
-278
-
-V
-
-$151.7K
-
-MC
-
-$39.4M
-
-BLESS
-Blessed
-Buy 
-
-4m
-
-BVbuM...Snj
-
-14%
-
-Liq
-
-$35.5K
-
-235
-
-V
-
-$370.8K
-
-MC
-
-$33.6M
-
-GUCCI
-Official Big Gucci Berry
-Buy 
-
-5m
-
-8a4xM...ump
-
-15%
-4%
-
-Liq
-
-$42.1K
-
-383
-
-7
-
-V
-
-$256.4K
-
-MC
-
-$135.7K
-
-xing
-xing xing
-Buy 
-
-5m
-
-5DzJA...ftj
-
-12%
-
-Liq
-
-$99.7K
-
-201
-
-V
-
-$107K
-
-MC
-
-$105.5K
-
-SWAP
-Swapay
-Buy 
-
-7m
-
-9evjq...wap
-
-11%
-Run
-
-Liq
-
-$7.4K
-
-251
-
-6
-
-V
-
-$15.8K
-
-MC
-
-$30.2K
-
-🦅 DEXScreener Spent
-Filter
-LI
-LITT
-Lost In The Trenches
-Buy 
-
-3m
-
-BeSZz...ump
-
-27%
-28%
-
-Liq
-
-$59.9K
-
-1
-
-V
-
-$124.3K
-
-MC
-
-$59.4K
-
-GUCCI
-Official Big Gucci Berry
-Buy 
-
-5m
-
-8a4xM...ump
-
-15%
-4%
-
-Liq
-
-$42.1K
-
-383
-
-7
-
-V
-
-$256.4K
-
-MC
-
-$135.7K
-
-xing
-xing xing
-Buy 
-
-5m
-
-5DzJA...ftj
-
-12%
-
-Liq
-
-$99.7K
-
-201
-
-V
-
-$107K
-
-MC
-
-$105.5K
-
-SEALP
-Seal Pnut Sol
-Buy 
-
-8m
-
-Bypzo...ump
-
-8%
-
-Liq
-
-$78.6K
-
-242
-
-V
-
-$454.1K
-
-MC
-
-$100.2K
-
-MAVS
-MAVS CASH
-Buy 
-
-12m
-
-A5pC5...ump
-
-61%
-36%
-
-Liq
-
-$55K
-
-900
-
-42
-
-V
-
-$104.8K
-
-MC
-
-$239.3K
-
-bred
-bred
-Buy 
-
-13m
-
-GYZqq...Ud4
-
-58%
-47%
-
-Liq
-
-$82.08
-
-467
-
-V
-
-$267.6K
-
-MC
-
-$1.3K
-
-PUMPIT
-BOGDANOFF
-Buy 
-
-14m
-
-BAvdL...Ts7
-
-57%
-46%
-
-Liq
-
-$29.83
-
-379
-
-1
-
-V
-
-$384K
-
-MC
-
-$81.7K
-
-Sniper New
-Following
-Refer
-0
-Contest
-Mobile APP
-Tutorial
-About
-Bot
-API
-SOL: $190.53 ║
-═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
-
+Found page URL: https://gmgn.ai/new-pair?chain=sol
+Found page URL: https://gmgn.ai/new-pair?chain=sol
+Starting to monitor new coins in the 'New Pool' section...
+New coins found: ['/sol/token/G2wvn27LP9NDnWJFamiNroqHJ2AbsCF68Kv16WZDpump', '/sol/token/7wUR7dPWyFgFjUMLtQX2PDq5PfUDVr9EZt4Tu6apump', '/sol/token/FkJZEoabsQoEPDTnP9vGRMfv9iRz2o4Qh26KRZsbZit9', '/sol/token/EZ1QnKdiZFPBZAtMdyTw5CE8zADqDVN3qc29C8D2pump', '/sol/token/Ms3fENjdwXxFTtvBL9p8bmm7vJeengYC2NT784Xpump', '/sol/token/H4LWrJocwjNZfjtBesg7LfoZqDd8UMbF7Dz3QvSLpump', '/sol/token/BVUeJuitX8P8iLTpo69HxLcZVJFuEAB1MPpwW3KnNp2A', '/sol/token/D4MooBnjdLHMJfU4rVKKBwvWXip39KvpyC8V7bYekRgs', '/sol/token/2paSoKQNYxiQ9ScAyDDZwVFa9pdAZZzaL3JwWER7hjjK', '/sol/token/FVQE4UhwncKpVMeGTFm3kexja2k9FFAZCZDqyLBiBLtc', '/sol/token/HvXqYxyHzaCBvZngBGF5JrMjY4dbZLpuyweEE1gyTtGp', '/sol/token/Gy1nQQKLqYPunq3LTueVzSbTNWD1fTWdC67fCEKAWRiT', '/sol/token/9avKSurkxme6TVcEHi4xozVVDxoUNPU4WCFPCCGKSoDm', '/sol/token/GFsuJDxrazUwoVA8qCkLaSMTSkQVybhXVBSKkvGHLzP6', '/sol/token/FhpBwLSBqm6jxFxMCdfX4bfkdmEWfvjG1xycVtyHP263', '/sol/token/7sLc5MJVMSPsZmBmfKyWrnwcD48gPLYbTjs9u5m6ZsJP', '/sol/token/Hs4rw9aCzCoqK9wcZZGrebb77dXfTJFt7SfsGo96RuKi', '/sol/token/GLtiwRcTGo2WJcFbos9Ya5BNGiNGVyvBF24XiqQepump']
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+New coins found: ['/sol/token/CQcrpqVhzxnTMsS5rAB3b21bEtJXhwCHuaUofMxp6nbv']
+No new coins found in this iteration.
+New coins found: ['/sol/token/xJWBN8UVfsJgW5v8fHmUqmSGz7XhA7toBQ9Ga77sa2j']
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+New coins found: ['/sol/token/9N4MMNdYM8CAt9jav7nmet63WYRsJmH5HXobyBrPpump', '/sol/token/FtpEJAqGMMfaccSug5dK9cfLrpJnqwyHG4M8me8yTfxZ']
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+New coins found: ['/sol/token/FyLwUf2tptcfBYsMRiRjFpUxkBAChJubY4LS8Chepump']
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+New coins found: ['/sol/token/5ATZqi3mxZbEKsE17zoMKG2cjc2voTmukE1ddnH7pump']
+No new coins found in this iteration.
+New coins found: ['/sol/token/EbXqAXZSjc91WKRCZQBVh2SMTvXiEvbQAgkyRYkPfza4', '/sol/token/3tUJiHAcTa917mR4t5iwAtJckch9Q5ru8aG3ichJUxi3']
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+New coins found: ['/sol/token/4wRKWjx9tKY8bVVf13eXHio1nobND5jzPoQWn1j4HPAq']
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+New coins found: ['/sol/token/9fBKHiGjsgZVH74qRrvTy3PtaGwVvhEUZ7s2TZo54CSG']
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+New coins found: ['/sol/token/7Pc2Dyhp5xj94LomdrtZ2QdFf8zLLxx6kkUQjRYPbh7F']
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No coin elements found in the 'New Pool' section.
+No coin elements found in the 'New Pool' section.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+New coins found: ['/sol/token/ELfJ5bu23JsKDB8R3ThXLvv1qesLAMXsBdeJAAXtpump']
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+No new coins found in this iteration.
+New coins found: ['/sol/token/4bzpRwb8HrFrsNBcvTvAYRiQv8Kf9wLn23vFvZQrpump', '/sol/token/5qaWqZvzRJK1BiuDhZWNBKoFvrVhxWiXPcAe4W3Wpump', '/sol/token/4GSWLScpiU5KFj3PJ6YAWAdH8t8fB9ETbza9LBadpump', '/sol/token/92bx23By9srtdC1ZMT79rwbqaMvy5Jd5RBhKdE3Kpump', '/sol/token/5fYz1k1SysNP4aMoyabcZN8Q2pSuk9ZWW4psLnfbFkwd', '/sol/token/AvGgBK8bsdkz61LjGiXQ7BGoiU1DkmYyUCtbLrSpump']
+No new coins found in this iteration.
+New coins found: ['/sol/token/A7ZfntmcPNiqJCY6FqnyPFt9XU6toBFhNLdFLLwupump', '/sol/token/B3vS2hXqW2VRcyEkRmKVJvCGiaa8wLmw4ZFgmuYypump', '/sol/token/GYjqDjNBjVRpgqxEaxHKMed1MPhdL4e6dy2Qzv4Hpump', '/sol/token/59MPE3DMvDbNsmzqfSHU7fy5SHG6wxfdJbpVLRWBpump', '/sol/token/4WctL9M13xL2ieE5ahgmfdckCkdYceKw8xvuYbecpump']
+New coins found: ['/sol/token/AY4i4aAxtKXRUwWNA53CGSbqPmUmRkgm8WdvH7LRpump', '/sol/token/63iS6iRFNLCqSSahuTKrjPAifs87aNygS6rptSWMpump']
+New coins found: ['/sol/token/2YJeHk5zYkdJpNRkqvqgeG4KU9bSxYKZTzwRifedpump', '/sol/token/9KJ1y8Y3q3paeweAeyysSZxH37uB6Ut6tE1gJGcipump', '/sol/token/G9mwXgKjcK84EyYt9Nc4Lzz5XhBmTKAUzgP6qgJySPct']
+New coins found: ['/sol/token/2eAkcE1UqUz3LGGdzhCo2per7oZqKJPmsYSHisERpump', '/sol/token/3UibHkvVFewTAHg1vQkFrwq2fZxoiYiDoxsWQBdipump', '/sol/token/rDhYvdsQqkkEoNsmjfLw3ci8rHs9qYofNF3v9Zmpump']
+New coins found: ['/sol/token/8R5Tph2czDDqVBmLPPTs3Nte2om3QecvcGjL3d5spump', '/sol/token/FxpgbeEvAqPYZpPAvmo3stuvqzb9Aw9vUCtwvWkKpump', '/sol/token/6FGrLXMxYTack7Pvd9z1UyRoaAuUjZZh1EBAQR5Gpump']
+No new coins found in this iteration.
+New coins found: ['/sol/token/GcddYZKH7Zrehu2wTY8x45AWPYWbVUXj9wzQngNypump', '/sol/token/C99viL6ysXueLWGUX9yuLveANV6j8dFZNHX1dCCdpump']
+No new coins found in this iteration.
+New coins found: ['/sol/token/HPnmWUpvJfvxMpopDCLhrYE8c7epMEXpdFAHizhrpump', '/sol/token/C4r2kjdQU8YXMvxJkEtfAc5mucm2gF6a6xc1kS3m11gb']
+New coins found: ['/sol/token/3f3kaKM7iXhxa25FzSW5UPrsj8r6LQQT9oYqRobapump', '/sol/token/D2cLAozgCbAbWGuzxbV5Kfvm5BRkXpSL2LTCPKHSpump']
+New coins found: ['/sol/token/9UZ69DqrESGpaXAawnVU5x97JpXw8ej8abGUqe52pump', '/sol/token/pwRB5xMTjzJ1Jb4Mcxs3XB3FqSR3hcpJAPMj2Dcpump', '/sol/token/8go9Cd4N8Nph65da71J9AY8VkpKVJ5dqMcFKv2cspump']
+No new coins found in this iteration.
+New coins found: ['/sol/token/3jQGfb7e6mzaNpQvhfjVQyGRye1wUSbcuYgFJE8Bpump']
+New coins found: ['/sol/token/2FsoJTZQF1J7QZN418sdXk3p9CfmHP9a3yiNYj4Rpump', '/sol/token/CeFJmY96X7FXNaof5gwpDRnSL3QupTc77dQrTUydpump', '/sol/token/5vkzoj3vKgmYPjMbrCsmhsxUQy5ZFEeDXqG8tFzCszJv', '/sol/token/DBiE7xiFiHwi15rJwZP7GCGhiT2LvJ3fUCHgiGN4pump']
+No new coins found in this iteration.
+New coins found: ['/sol/token/BdyM9mJpnJtMiArMsWkooxG3pw6gSvbmnCz2yGNxU7Zk']
+New coins found: ['/sol/token/DfrVjFreSVHuTFYZLopHR9Wo52C4odkUThFPQHXzpump', '/sol/token/PsB3puKyekaPiZFm1xRhJBiGJYYCnfXieffPm7cLzxr', '/sol/token/D4hjmpZdecWfiXE1k15SzC4VsZgTBA4H8UAxHov3pump', '/sol/token/ESFpwQdbunC9xC38Vcb1c2sLc87JVbgc2BkRsBW9pump', '/sol/token/4C9HbiQtvZep5uQKKPNseJx7zqdGewjpyg3fpX5Epump', '/sol/token/3txrAgSEn2Fzw5tezBVmrRqthB7pJztC6xemUViPgFtC', '/sol/token/6e81VzxMmCRmZUeD3mt41vRcNcDnLSZHqpGXQbEHpump']
+New coins found: ['/sol/token/4AhGcBMW2vUdhYKz5AsETsRtcxxqKWHVfgQLxJBEpump', '/sol/token/A6XQB2ccuuHpfm8CQi7JYW49fF4zC64xpq5TLx41pump', '/sol/token/3Vcw8uMe2QLskipjdhkjnRD7bNta2VbX7JCKp8Rapump', '/sol/token/2UamMPHqnB8VoKQ7BVHttKN84f1RVin3LhefofScpump']
+New coins found: ['/sol/token/BB67euFtRZZtc9oF2UUtB8CYiGZKMmFMYmrZgqPWpump']
+New coins found: ['/sol/token/RoCFWzCYhvRqP4jJENvAzXL3kM4JhDPMfiNKPRPgump', '/sol/token/ERJAYG96Gc2RUC13iJrwMRF6hojc6rhJChBTGn1GtexZ']
+No new coins found in this iteration.
+No new coins found in this iteration.
+New coins found: ['/sol/token/4jhsRz7gGpx2DfmcRXqnCeFf7faGyX1xuEvH8Wmnpump']
